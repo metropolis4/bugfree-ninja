@@ -1,7 +1,6 @@
 {
   "name": "jobSearch",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -12,6 +11,19 @@
     "express": "~4.12.2",
     "jade": "~1.9.2",
     "morgan": "~1.5.1",
-    "serve-favicon": "~2.2.0"
-  }
+    "serve-favicon": "~2.2.0",
+    "mongoose": "^3.8.24",
+    "passport": "^0.2.1",
+    "underscore": "^1.8.2",
+    "passport-local": "~1.0.0",
+    "passport": "~0.2.1",
+    "express-session": "~1.10.3",
+    "bcrypt": "~0.8.1",
+    "connect-flash": "~0.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metropolis4/bugfree-ninja"
+  },
+  "author": "Matt Rich"
 }

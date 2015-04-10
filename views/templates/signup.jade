@@ -1,6 +1,6 @@
-.container(ng-controller="signinController")
+.container(ng-controller="signupController")
     .container
-        h3 Welcome Back!
+        h3 New User?
         .row
             .form-group.col-md-4
                 input.form-control(type="text" ng-model="username" placeholder="username...")
@@ -9,3 +9,7 @@
             .form-group.col-md-2
                 a(href="#/main")
                     button.btn.btn-primary(ng-click="submit()") Submit...
+        .container
+            h3 Returning?
+            a(href="#/signin")
+                button.btn.btn-primary Login...

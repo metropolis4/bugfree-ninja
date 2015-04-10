@@ -3,9 +3,13 @@
 
     jobApp.config(function($routeProvider){
         $routeProvider
-            .when('/', {
+            .when('/signin', {
                 templateUrl: '/templates/signin',
                 controller: 'signinController'
+            })
+            .when('/', {
+                templateUrl: '/templates/signup',
+                controller: 'signupController'
             })
             .when('/main', {
                 templateUrl: '/templates/main',
@@ -13,16 +17,15 @@
             });
     });
 
+    jobApp.controller('signupController', ['$scope', '$http', function($scope, $http){
+        $scope.submit = function(){
+            $http.post('/auth/signup', {username: $scope.username, password: $scope.password});
+        };
+    }]);
+
     jobApp.controller('signinController', ['$scope', '$http', function($scope, $http){
         $scope.submit = function(){
-            var user = $scope.username;
-            var password = $scope.password;
-            if(user === "It's Me" && password === "q1w2E#R$"){
-                $http.get('#/main');
-            }
-            else {
-                $http.get('/');
-            }
+            $http.post('/auth/login', {username: $scope.username, password: $scope.password});
         };
     }]);
 
