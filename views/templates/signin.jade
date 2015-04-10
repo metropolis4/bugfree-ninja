@@ -1,0 +1,9 @@
+.container(ng-controller="signinController")
+    .container
+        .row
+            .form-group.col-md-4
+                input.form-control(type="text" ng-model="username" placeholder="username...")
+            .form-group.col-md-4
+                input.form-control(type="password" ng-model="password" placeholder="password...")
+            .form-group.col-md-2
+                input.form-control.btn.btn-primary(ng-click="submit()" value="Submit...")
