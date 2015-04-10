@@ -10,5 +10,8 @@ router.get('/templates/:templateId', function(req, res){
 router.post('/auth/signup', authenticationController.processSignup);
 router.get('/auth/logout', authenticationController.logout);
 router.post('/auth/login', authenticationController.processLogin);
+router.get('/newJob', indexController.newJob);
+router.get('/api/jobs', indexController.getJobs);
+router.post('/api/jobs', indexController.createNewJob);
 
 module.exports = router;

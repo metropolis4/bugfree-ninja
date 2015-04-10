@@ -1,0 +1,25 @@
+.modal-header
+    h3 Add a new Job
+.modal-body
+    form.form
+        .form-group
+            label(for="date") Date Application Submitted:
+            input.form-control(type="date" ng-model="newJob.date" required)
+        .form-group
+            label(for="company name") Company Name:
+            input.form-control(type="text" ng-model="newJob.company" required)
+        .form-group
+            label(for="position title") Position Title:
+            input.form-control(type="text" ng-model="newJob.title" required)
+        .form-group
+            label(for="Contact Name") Contact Name:
+            input.form-control(type="text" ng-model="newJob.contact" required)
+        .form-group
+            label(for="Website URL") Website URL:
+            input.form-control(type="text" ng-model="newJob.url" required)
+        .form-group
+            label(for="phone") Phone:
+            input.form-control(type="tel" ng-model="newJob.phone" required)
+.modal-footer
+    button.btn.btn-primary(ng-click="confirm()") save...
+    button.btn.btn-default(ng-click="cancel()") close...

@@ -6,3 +6,7 @@ body {
 a {
   color: #00B7FF;
 }
+.modal-header,
+.modal-footer {
+    background: rgba(51,122,183,0.1);
+}
