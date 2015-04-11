@@ -5,6 +5,7 @@ var jobSchema = new mongoose.Schema({
     company : String,
     title   : String,
     contact : String,
+    email   : String,
     response: Boolean,
     url     : String,
     phone   : String

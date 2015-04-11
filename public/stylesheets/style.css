@@ -10,3 +10,7 @@ a {
 .modal-footer {
     background: rgba(51,122,183,0.1);
 }
+.job-true {
+    text-decoration: line-through;
+    color: darkgrey;
+}

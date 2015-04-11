@@ -14,7 +14,6 @@ module.exports = {
         });
     },
     createNewJob: function(req, res){
-        console.log("FROM SERVER:: ", req.body);
         var newJob = new Job(req.body);
         newJob.save(function(err, results){
             if(err) throw err;

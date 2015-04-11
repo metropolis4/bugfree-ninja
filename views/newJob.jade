@@ -3,7 +3,7 @@
 .modal-body
     form.form
         .form-group
-            label(for="date") Date Application Submitted:
+            label(for="date") Date Applied:
             input.form-control(type="date" ng-model="newJob.date" required)
         .form-group
             label(for="company name") Company Name:
@@ -15,11 +15,14 @@
             label(for="Contact Name") Contact Name:
             input.form-control(type="text" ng-model="newJob.contact" required)
         .form-group
+            label(for="email") Email:
+            input.form-control(type="email" ng-model="newJob.email")
+        .form-group
             label(for="Website URL") Website URL:
-            input.form-control(type="text" ng-model="newJob.url" required)
+            input.form-control(type="text" ng-model="newJob.url")
         .form-group
             label(for="phone") Phone:
-            input.form-control(type="tel" ng-model="newJob.phone" required)
+            input.form-control(type="tel" ng-model="newJob.phone")
 .modal-footer
     button.btn.btn-primary(ng-click="confirm()") save...
     button.btn.btn-default(ng-click="cancel()") close...

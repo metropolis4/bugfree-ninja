@@ -1,0 +1,24 @@
+table.table.table-striped.all-jobs
+    tr
+        th Date Applied
+        th Company
+        th Position
+        th Contact
+        th Email
+        th URL
+        th phone
+        th response?
+        th
+    tr(ng-repeat="job in jobs" class="job-{{active}}")
+        td {{job.date | date: 'shortDate'}}
+        td {{job.company}}
+        td {{job.title}}
+        td {{job.contact}}
+        td 
+            a(ng-href="mailto:{{job.email}}?subject=Follow%20up") {{job.email}}
+        td 
+            a(ng-href="http://{{job.url}}") {{job.url}}
+        td {{job.phone}}
+        td {{job.response}}
+        td 
+            input(type='checkbox' ng-model="active")
