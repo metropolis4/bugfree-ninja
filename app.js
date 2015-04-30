@@ -7,12 +7,12 @@ var express = require('express'),
     mongoose = require('mongoose'),
     session = require('express-session'),
     flash = require('connect-flash'),
-    passport = require('passport');
+passport = require('passport');
 
 var routes = require('./routes/index');
 var passportConfig = require('./config/passport');
 
-mongoose.connect('mongodb://localhost/jobSearch');
+// mongoose.connect('mongodb://localhost/jobSearch');
 
 var app = express();
 
